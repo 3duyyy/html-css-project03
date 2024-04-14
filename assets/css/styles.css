@@ -37,6 +37,8 @@ a {
   text-align: center;
   min-width: 205px;
   padding: 0 20px;
+  font-size: 1.6rem;
+  font-weight: 400;
   line-height: 60px;
   border-radius: 999px;
   flex-shrink: 0;
@@ -729,4 +731,188 @@ a {
   color: #10375c;
   font-size: 1.4rem;
   font-weight: 400;
+}
+
+/* ===============Appointment============== */
+.appointment {
+  margin: 85px 0 170px;
+}
+
+.appointment__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6fbff;
+  padding: 100px 178px;
+}
+
+.appointment__heading {
+  position: relative;
+  padding-bottom: 18px;
+}
+
+.appointment__heading::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 136px;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  flex-shrink: 0;
+  background: #2e80ce;
+}
+
+.appoinment__desc {
+  max-width: 617px;
+  text-align: center;
+}
+
+.appointment__hightlight {
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+  color: #575f66;
+}
+
+.appointment__hightlight:hover {
+  font-style: italic;
+  color: purple;
+}
+
+.appointment__btn {
+  margin-top: 38px;
+}
+
+/* =============footer============= */
+.footer {
+  background: #10375c;
+  padding: 100px 0 42px;
+}
+
+.footer__row {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 0.8fr; /*Lấy tỉ lệ cái lớn nhất là 1fr còn lại căn theo cái thứ nhất*/
+  column-gap: 78px;
+}
+
+.footer__desc {
+  margin-top: 21px;
+  color: #a9b3bb;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.footer__heading {
+  margin-bottom: 20px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.footer__heading:last-of-type {
+  margin-top: 28px;
+}
+
+.footer__item {
+  margin-top: 10px;
+}
+
+.footer__link {
+  color: #a9b3bb;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.footer__social {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 28px;
+}
+
+.footer__social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  color: #2e80ce;
+  background: #fff;
+  transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+  color: #fff;
+  background: #2e80ce;
+}
+
+.footer__form {
+  display: flex;
+  column-gap: 12px;
+  margin-top: 10px;
+}
+
+.footer__form-input {
+  width: 212px;
+  height: 46px;
+  padding: 10px 10px;
+  flex-shrink: 0;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  background: transparent;
+}
+
+.footer__form-input::placeholder {
+  color: #9ca8b1;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+
+.footer__form-submit {
+  font-family: "Open Sans";
+  min-width: 108px;
+  line-height: 46px;
+  border-radius: 4px;
+  border: none;
+}
+
+.footer__form-submit:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.footer__copyright {
+  color: #aab3ba;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.86;
+}
+
+.footer__copyright::before {
+  margin: 28px 0;
+  display: block;
+  content: "";
+  width: 1170px;
+  height: 1px;
+  flex-shrink: 0;
+  background: #406181;
 }
